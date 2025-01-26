@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'League Spartan', sans-serif;
+    animation: fadeIn 700ms ease-in 0s 1 normal;
+}
+
+#website-name{
+    font-size: 175%;
+    margin-left: 1%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+nav:hover{
+    background-color: #282E34;
+    color: #ffffff;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    width: 300px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 150%;
+    font-weight: 600;
+}
+
+ul li{
+    transition: all 700ms ease-in 0s;
+}
+
+
+ul li:hover{
+    opacity: 0.7;
+    text-decoration: underline;
+}
+
+.pimg1{
+    height: 100vh;
+    background-image: url(../imgs/parallaxPic.jpg);
+    position: relative;
+    opacity: 0.7;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+#main-text{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 250%;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+#section-heading-content{
+    text-align: center;
+    margin-top: 2%;
+}
+#section-heading-content > h3 {
+    font-size: 175%;
+    padding: 1%;
+}
+.text-content{
+    font-size: 150%;
+    padding: 1%;
+}
+
+#img-container{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.imgs{
+    background-color: skyblue;
+    width: 100%;
+    margin: 2%;
+    height: 300px;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    transition: all 700ms ease-in 0s;
+}
+
+.imgs:hover{
+    opacity: 0.7;
+}
+
+#img1{
+    background-image: url(../imgs/Andhra/Andhra-Card-main.jpg);
+}
+#img2{
+    background-image: url(../imgs/Karnataka/karnataka-card-or-main.jpg );
+}
+#img3{
+    background-image: url(../imgs/Kerala/kerala-card.jpg);
+}
+#img4{
+    background-image: url(../imgs/TamilNadu/TamilNadu-Card.jpg);
+}
+#img5{
+    background-image: url(../imgs/Telangana/Hyderabad-card.jpg);
+}
+
+.img-text{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    color: #fff;
+    font-size: 130%;   
+    transition: all 700ms ease-in 0s; 
+}
+
+.img-text:hover{
+    color: black;
+}
+
+.positioning-text{
+    position: relative;
+    top: 40%;
+    font-weight: 800;
+}
+
+.sub-text{
+    font-weight: 400;
+}
+
+footer{
+    background-color: #282E34;
+    text-align: center;
+    color: #ffffff;
+}
+
+h4 {
+    font-size: 175%;
+    padding: 2%;
+}
+
+svg{
+    padding: 2%;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.hamburger{
+    display: none;
+}
+
+@media (min-width:768px){
+    .imgs{
+        width: 25%;
+    }
+
+    .pimg1{
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width:1000px){
+    .hamburger{
+        display: block;
+        border: 0 ;
+        background-color: transparent;
+        font-size: 30px;
+        margin: 25px;
+        align-self: flex-end;
+    }
+
+    ul{
+        display: none;
+        margin: 0px;
+        color: #ffffff;
+    }
+
+    ul.show{
+        display: block;
+    }
+
+    ul li:hover{
+        opacity: 0.7;
+        text-decoration: underline;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #282E34;
+    }
+
+    #website-name{
+        display: none;
+    }
+}
+
+@keyframes fadeIn{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}

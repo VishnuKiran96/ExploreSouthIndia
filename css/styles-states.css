@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'League Spartan', sans-serif;
+    animation: fadeIn 700ms ease-in 0s 1 normal;
+}
+
+#website-name{
+    font-size: 175%;
+    margin-left: 1%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+nav:hover{
+    background-color: #282E34;
+    color: #ffffff;
+}
+
+#only-this{
+    color: #ffffff;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    width: 300px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 150%;
+    font-weight: 600;
+}
+
+ul li{
+    transition: all 700ms ease-in 0s;
+}
+
+ul li:hover{
+    opacity: 0.7;
+    text-decoration: underline;
+}
+
+
+.pimg1{
+    height: 100vh;
+    background-image: url(../imgs/Andhra/Andhra-Card-main.jpg);
+    position: relative;
+    opacity: 0.7;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.pimg2{
+    height: 100vh;
+    background-image: url(../imgs/Karnataka/Karnataka-main.jpg);
+    position: relative;
+    opacity: 0.7;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.pimg3{
+    height: 100vh;
+    background-image: url(../imgs/Kerala/Kerala-main.jpg);
+    position: relative;
+    opacity: 0.7;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.pimg4{
+    height: 100vh;
+    background-image: url(../imgs/TamilNadu/TamilNadu-Main.jpg);
+    position: relative;
+    opacity: 0.7;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+#main-text{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 250%;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#section-header h2{
+    text-align: center;
+    font-size: 200%;
+    padding: 2%;
+}
+
+.content-text{
+    font-size: 140%;
+    text-align: justify;
+    margin: 1% 5%;
+}
+
+#section-main-text-city h2{
+    text-align: center;
+    margin: 2%;
+    padding: 1%;
+    font-size: 175%;
+}
+
+#section-main-text-city h3{
+    text-align: center;
+    margin: 1%;
+    padding: 1%;
+    font-size: 150%;
+}
+
+footer{
+    background-color: #282E34;
+    text-align: center;
+    color: #ffffff;
+}
+
+#footer-heading h4{
+    font-size: 175%;
+    padding: 2%;
+}
+
+svg{
+    padding: 2%;
+}
+
+.hamburger{
+    display: none;
+}
+
+@media (min-width:768px){
+
+    .pimg1{
+        background-attachment: fixed;
+    }
+    .pimg2{
+        background-attachment: fixed;
+    }
+    .pimg3{
+        background-attachment: fixed;
+    }
+    .pimg4{
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width:1000px){
+    .hamburger{
+        display: block;
+        border: 0 ;
+        background-color: transparent;
+        font-size: 30px;
+        margin: 25px;
+        align-self: flex-end;
+    }
+
+    ul{
+        display: none;
+        margin: 0px;
+        color: #ffffff;
+    }
+
+    ul li:hover{
+        opacity: 0.7;
+        text-decoration: underline;
+    }
+
+    ul.show{
+        display: block;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #282E34;
+    }
+
+    #website-name{
+        display: none;
+    }
+}
+
+@keyframes fadeIn{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
